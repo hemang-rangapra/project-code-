@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url(/fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-Medium";
+    src: url(/fonts/Montserrat-Medium.ttf);
+}
+
+
+.accordion-sec {
+    padding: 100px 0;
+}
+
+.accordion-sec .container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.accordion-sec h2 {
+    font-size: 36px;
+    line-height: 46px;
+    color: #131313;
+    text-transform: capitalize;
+    font-family: "Montserrat-Bold";
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.extender-accordion {
+    border-top: 2px solid #131313;
+}
+
+.accordion-main {
+    border-bottom: 2px solid #131313;
+    padding: 25px 0;
+}
+
+.accordion-main.open .accordion-title-trigger::before {
+    transform: rotate(180deg);
+}
+
+.accordion-main .accordion-title-trigger h3 {
+    font-size: 28px;
+    line-height: 38px;
+    color: #131313;
+    margin: 0;
+    font-family: "Montserrat-Bold";
+    font-weight: 700;
+}
+
+.accordion-main .accordion-title-trigger {
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion-main .accordion-title-trigger::after,
+.accordion-main .accordion-title-trigger::before {
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: #131313;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    display: block;
+}
+
+.accordion-main .accordion-title-trigger::before {
+    transform: rotate(90deg);
+}
+
+.accordion-main .accordion-description {
+    padding-top: 20px;
+    font-family: "Montserrat-Medium";
+    font-weight: 500;
+}
+
+.accordion-main .accordion-description .p-large {
+    font-size: 18px;
+    line-height: 30px;
+    color: #131313;
+}

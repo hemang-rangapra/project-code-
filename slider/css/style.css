@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Montserrat-Medium";
+    src: url(/fonts/Montserrat-Medium.ttf);
+}
+
+.slider-section {
+    padding: 120px 0;
+    position: relative;
+}
+
+.slider-section .container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.slider-section h2 {
+    font-size: 38px;
+    line-height: 48px;
+    color: #131313;
+    font-family: "Montserrat-Medium";
+    text-transform: capitalize;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.myswiper .swiper-slide {
+    transition: all 0.3s ease-in-out;
+    transform: scale(0.85);
+}
+
+.myswiper .swiper-slide-prev,
+.myswiper .swiper-slide-next {
+    transform: scale(0.9);
+}
+
+.myswiper .swiper-slide-active {
+    transform: scale(1);
+}
+
+.slide-detail {
+    padding: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.368);
+    border-radius: 10px;
+}
+
+.slide-detail h6 {
+    text-align: center;
+    font-size: 16px;
+    line-height: 28px;
+    color: #131313;
+    margin: 0;
+    font-family: "Montserrat-Medium";
+}
